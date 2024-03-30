@@ -1,0 +1,85 @@
+{% load static %}
+<!-- task_list.html --> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<body>
+        {%if message %}
+        <div class="flexbox">
+            <ul class="messages">
+               <p>{{message}}</p>
+            </ul>
+        </div>
+            <div>
+                <header>
+                    <ul class="lien">
+                        <li><a href="http://127.0.0.1:8000/create/">Créer une  tâche</a></li>
+                    </ul>
+                </header>
+            </div>
+        {%else%}
+            <div class="section">
+                <div class="Frame1">
+                    <h1>TO DO</h1>
+                    <p>TO DO LIST</p>
+                    <div class="flexbox">
+                        <ul>
+                            {% for task in tasks_n %} 
+                                
+                                <div class="caract">
+                                    <li><u>{{ task.title }}</u> :</li>
+                                    <p>Description : {{ task.description}}</p>
+                                    <p>Due Date : {{ task.due_date}}</p>
+
+                                </div>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="Frame2">
+                    <h1>DOING</h1>
+                    <div class="flexbox">
+                        <ul>
+                        {% for task in tasks_d %} 
+                            
+                            <div class="caract">
+                                <li><u>{{ task.title }}</u> :</li>
+                                <p>Description : {{ task.description}}</p>
+                                <p>Due Date : {{ task.due_date}}</p>
+
+                            </div>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="Frame3">
+                    <h1>DONE</h1>
+                    <div class="flexbox">
+                        <ul>
+                        {% for task in tasks %} 
+                            
+                            <div class="caract">
+                                <li><u>{{ task.title }}</u> :</li>
+                                <p>Description : {{ task.description}}</p>
+                                <p>Due Date : {{ task.due_date}}</p>
+
+                            </div>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <ul class="menu">
+                    <li><a href="http://127.0.0.1:8000/tasks/">Liste des tâches</a></li>
+                    <li><a href="http://127.0.0.1:8000/create/">Créer une  tâche</a></li>
+                    <li><a href="http://127.0.0.1:8000/selected-update/">Modifier une tâche</a></li>
+                    <li><a href="http://127.0.0.1:8000/selected-delete/">Supprimer une tâches</a></li>
+                </ul>
+            </header>
+        {%endif %}
+        
+</body>
+</html>
