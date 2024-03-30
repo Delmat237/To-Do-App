@@ -1,8 +1,15 @@
-##Lancement de l'application
-Pour lancer l'appli, il faut :
-*Enregistrer tous les fichiers(db.sqlite 3 : base de donnee, manage.py) et dossier(tasks,todo_app)
-dans un meme dossier .
-*A l'aide de l'invite de commande se dirriger a la racine où se trouve ces fichiers
-*Entrer python manage.py runserver
-*copier et coller ou saisir l'Url /http://127.0.0.1:8000/ dans un naviguateur.
-*Et c'est fait ,vous pouvez à présent créer ,modifier,supprimer et visualiser vos taches.
+Ce projet est une application de gestion de tâches simple, développée en utilisant PHP pour la logique côté serveur et MySQL pour la base de données et l'interface en html, css et javascript. L’application permet aux utilisateurs de créer, afficher, mettre à jour et supprimer des tâches.
+
+# Fonctionnalités
+- Ajouter une tâche : Les utilisateurs peuvent ajouter de nouvelles tâches avec un titre et une description.
+- Afficher les tâches : La liste des tâches est affichée avec leur statut (en cours ou complétées).
+- Mettre à jour le statut : Les utilisateurs peuvent cocher une case pour marquer une tâche comme complétée.
+- Supprimer une tâche : Les tâches peuvent être supprimées de la liste.
+
+# Installation & Execution
+
+# Captures d’écran
+
+# Auteur
+Ce projet a été développé par:
+@ Delmat237
