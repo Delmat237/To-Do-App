@@ -1,4 +1,4 @@
-Ce projet est une application de gestion de tâches simple, développée en utilisant PHP pour la logique côté serveur et MySQL pour la base de données et l'interface en html, css et javascript. L’application permet aux utilisateurs de créer, afficher, mettre à jour et supprimer des tâches.
+Ce projet est une application de gestion de tâches simple, développée en utilisant Django pour la logique côté serveur et SQLite3 pour la base de données et l'interface en html etcss . L’application permet aux utilisateurs de créer, afficher, mettre à jour et supprimer des tâches.
 
 # Fonctionnalités
 - Ajouter une tâche : Les utilisateurs peuvent ajouter de nouvelles tâches avec un titre et une description.
